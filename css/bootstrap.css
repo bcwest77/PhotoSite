@@ -3992,7 +3992,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.66);
 }
 .nav > li.disabled > a {
   color: #777;
@@ -4897,7 +4897,7 @@ a.label:focus {
 }
 .label-info[href]:hover,
 .label-info[href]:focus {
-  background-color: #31b0d5;
+  background-color: rgba(238, 238, 238, 0.66);
 }
 .label-warning {
   background-color: #f0ad4e;

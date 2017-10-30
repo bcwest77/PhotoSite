@@ -52,14 +52,17 @@ img {
     padding-left: 1px;
     padding-right: 1px;
 }
-.img-row a {
-    touch-action: none;
-}
 .img-row a:focus:active {
     outline: none !important;
 }
 .img-row a:focus {
     outline: 2px solid whitesmoke !important;
+}
+
+@media screen and (max-width:600px) {
+    .img-row a{
+        pointer-events: none;
+    }
 }
 
 /*Vertically align modal*/

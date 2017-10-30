@@ -52,6 +52,9 @@ img {
     padding-left: 1px;
     padding-right: 1px;
 }
+.img-row a {
+    touch-action: none;
+}
 .img-row a:focus:active {
     outline: none !important;
 }

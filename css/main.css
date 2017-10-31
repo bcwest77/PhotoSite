@@ -173,6 +173,13 @@ body.modal-open {
     overflow-y: scroll;
 }
 
+#contact-list ul {
+    padding: 0px;
+}
+#contact-list span {
+    font-weight: bold;
+}
+
 .col-md-6 {
     padding: 1px;
 }

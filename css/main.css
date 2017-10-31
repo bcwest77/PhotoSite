@@ -174,7 +174,7 @@ body.modal-open {
 }
 
 #contact-list ul {
-    padding: 0px;
+    list-style-type: none;
 }
 #contact-list span {
     font-weight: bold;

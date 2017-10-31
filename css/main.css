@@ -8,11 +8,22 @@ body {
     background-size: 1920px 1080px;
     font-family: 'Muli', sans-serif;
     color: #4D4D4D;
+    background-color: #FAFAF5;
+}
+body.photo-page {
     background-color: #030303;
+}
+
+.scroll-fix {
+    padding-left: 17px !important;
 }
 
 a {
     cursor: pointer;
+}
+
+.row {
+    margin-top: 51px !important;  
 }
 
 .navbar .navbar-nav {
@@ -48,7 +59,6 @@ img {
     max-height: 100%;
 }
 .img-row {
-    margin-top: 51px;
     padding-left: 1px;
     padding-right: 1px;
 }
@@ -56,7 +66,10 @@ img {
     outline: none !important;
 }
 .img-row a:focus {
-    outline: 2px solid whitesmoke !important;
+    outline: none !important;
+}
+.img-row a:focus img {
+    outline: 1px dotted whitesmoke;
 }
 
 /*Vertically align modal*/

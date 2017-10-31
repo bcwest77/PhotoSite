@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Photography
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </head>
+    <body class="photo-page">
+        
+        <div id="missingPage" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Whoops!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>That page is currently unavailable.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+        <div id="imgPopup" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-close text-right">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modal-img" src="img/pic01.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-default navbar-fixed-top scroll-fix">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
+                    <li class="active"><a href="photos.html" class="hvr-underline-from-center">PHOTOS</a></li>
+                    <li class=""><a href="contact.html" class="hvr-underline-from-center">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+
+            
+            <div class="row img-row">
+
+                <div class="col-md-6">
+                    <a href="" data-toggle="modal" data-target="#imgPopup" onclick="changeImage('img/pic01.jpg')"><img src="img/pic01.jpg"/></a>
+                </div>
+                <div class="col-md-6">
+                    <a href="" data-toggle="modal" data-target="#imgPopup" onclick="changeImage('img/pic02.jpg')"><img src="img/pic02.jpg"/></a>
+                </div>
+
+                <div class="col-md-6">
+                    <a href="" data-toggle="modal" data-target="#imgPopup" onclick="changeImage('img/pic03.jpg')"><img src="img/pic03.jpg"/></a>
+                </div>
+                <div class="col-md-6">
+                    <a href="" data-toggle="modal" data-target="#imgPopup" onclick="changeImage('img/pic04.jpg')"><img src="img/pic04.jpg"/></a>
+                </div>
+                
+                <div class="col-md-6">
+                    <a href="" data-toggle="modal" data-target="#imgPopup" onclick="changeImage('img/pic05.jpg')"><img src="img/pic05.jpg"/></a>
+                </div>
+                <div class="col-md-6">
+                    <a href="" data-toggle="modal" data-target="#imgPopup" onclick="changeImage('img/pic06.jpg')"><img src="img/pic06.jpg"/></a>
+                </div>
+                
+                <div class="col-md-6">
+                    <a href="" data-toggle="modal" data-target="#imgPopup" onclick="changeImage('img/pic07.jpg')"><img src="img/pic07.jpg"/></a>
+                </div>
+                <div class="col-md-6">
+                    <a href="" data-toggle="modal" data-target="#imgPopup" onclick="changeImage('img/pic08.jpg')"><img src="img/pic08.jpg"/></a>
+                </div>
+                
+                <div class="col-md-6">
+                    <a href="" data-toggle="modal" data-target="#imgPopup" onclick="changeImage('img/pic09.jpg')"><img src="img/pic09.jpg"/></a>
+                </div>
+                <div class="col-md-6">
+                    <a href="" data-toggle="modal" data-target="#imgPopup" onclick="changeImage('img/pic10.jpg')"><img src="img/pic10.jpg"/></a>
+                </div>
+                
+                <div class="col-md-6">
+                    <a href="" data-toggle="modal" data-target="#imgPopup" onclick="changeImage('img/pic11.jpg')"><img src="img/pic11.jpg"/></a>
+                </div>
+                <div class="col-md-6">
+                    <a href="" data-toggle="modal" data-target="#imgPopup" onclick="changeImage('img/pic12.jpg')"><img src="img/pic12.jpg"/></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

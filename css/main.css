@@ -107,6 +107,11 @@ img {
     text-align: justify;
     text-justify: inter-word;
 }
+.home-row img {
+    width: 68%;
+    display: block;
+    margin: 0 auto;
+}
 @media only screen and (max-width:786px) {
     .home-row .col-md-12 {
         margin-top: 5px;

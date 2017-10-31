@@ -59,39 +59,41 @@ img {
     outline: 2px solid whitesmoke !important;
 }
 
+/* MOBILE */
 @media screen and (max-width:600px) {
-    .img-row a{
-        display: none;
+    .modal:before {
+        height: 130%;
+    }
+    .modal-dialog {
+        min-width: 50%;
+        min-height: 50%;
     }
 }
+/*-------*/
 
 /*Vertically align modal*/
 .modal {
-  text-align: center;
+    text-align: center;
 }
-@media screen and (min-width: 768px) { 
-  .modal:before {
+.modal:before {
     display: inline-block;
     vertical-align: middle;
     content: " ";
     height: 90%;
-  }
 }
 .modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    min-width: 75%;
+    min-height: 75%;
 }
+/*-------*/
 
 .modal-close button {
     margin-right: 15px;
     margin-top: 15px;
-}
-
-.modal-dialog {
-    position: relative;
-    min-width: 75%;
-    min-height: 75%;
 }
 
 .modal-content {

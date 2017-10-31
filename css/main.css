@@ -83,13 +83,6 @@ img {
     .img-row a {
         pointer-events: none;
     }
-    .modal:before {
-        height: 100%;
-    }
-    .modal-dialog {
-        max-width: 60%;
-        max-height: 60%;
-    }
 }
 /*-------*/
 

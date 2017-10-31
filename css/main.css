@@ -101,10 +101,11 @@ img {
     text-justify: inter-word;
 }
 @media only screen and (max-width:786px) {
+    .nav .theme-switch {
+        display: none;
+    }
     .home-row .col-md-12 {
         margin-top: 20px;
-        padding: 0px;
-        padding-right: 10px;
     }
 }
 

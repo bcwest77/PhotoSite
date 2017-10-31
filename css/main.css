@@ -90,6 +90,8 @@ img {
 
 .modal-dialog {
     position: relative;
+    min-width: 75%;
+    min-height: 75%;
 }
 
 .modal-content {

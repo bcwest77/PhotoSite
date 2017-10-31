@@ -60,7 +60,7 @@ img {
 }
 
 /* MOBILE */
-@media screen and (max-width:600px) {
+@media screen and (max-width:400) {
     .modal:before {
         height: 130%;
     }

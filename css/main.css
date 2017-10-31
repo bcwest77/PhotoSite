@@ -14,8 +14,10 @@ body.photo-page {
     background-color: #030303;
 }
 
-.scroll-fix {
-    padding-left: 17px !important;
+@media only screen and (min-width:786px) {
+    .scroll-fix {
+        padding-left: 17px !important;
+    }
 }
 
 a {

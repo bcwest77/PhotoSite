@@ -80,15 +80,12 @@ img {
 
 /* MOBILE */
 @media only screen and (max-width:768px) {
-    .modal-content {
-        background-color: red !important;    
-    }
     .modal:before {
-        height: 130% !important;
+        height: 80%;
     }
     .modal-dialog {
-        min-width: 50% !important;
-        min-height: 50% !important;
+        min-width: 60%;
+        min-height: 60%;
     }
 }
 /*-------*/
@@ -99,7 +96,7 @@ img {
 }
 
 .modal-content {
-    background-color: #222;    
+    background-color: #222;
 }
 
 body.modal-open {

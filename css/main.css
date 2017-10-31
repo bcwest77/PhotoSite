@@ -67,7 +67,11 @@ nav li a:focus {
     right: 17px;
 }
 .theme-switch a {
-
+    background-color: #333;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
 }
 @media only screen and (max-width:786px) {
     .nav .theme-switch {

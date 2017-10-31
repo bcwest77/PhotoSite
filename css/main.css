@@ -83,6 +83,12 @@ img {
     padding-left: 1px;
     padding-right: 1px;
 }
+@media only screen and (max-width:768px) {
+    .img-row {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
 .img-row a:focus:active {
     outline: none !important;
 }
@@ -169,11 +175,6 @@ body.modal-open {
 
 .col-md-6 {
     padding: 1px;
-}
-@media only screen and (max-width:768px) {
-    .col-md-6 {
-        padding: 0px;
-    }
 }
 
 /* Underline From Center */

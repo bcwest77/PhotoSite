@@ -80,6 +80,9 @@ img {
 
 /* MOBILE */
 @media only screen and (max-width:768px) {
+    .img-row a {
+        pointer-events: none;
+    }
     .modal:before {
         height: 100%;
     }

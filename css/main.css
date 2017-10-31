@@ -173,10 +173,15 @@ body.modal-open {
     overflow-y: scroll;
 }
 
-@media only screen and (min-width:786px) {
+@media only screen and (max-width:786px) {
     #contact-list {
-        margin-top: 100px;
+        margin-top: 55px;
     }
+}
+#contact-list {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
 }
 #contact-list span {
     font-weight: bold;

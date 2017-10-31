@@ -98,10 +98,20 @@ img {
 .img-row a:focus img {
     outline: 1px dotted whitesmoke;
 }
+@media only screen and (max-width:768px) {
+    .img-row a {
+        pointer-events: none;
+    }
+}
 
 #header h1 {
     font-size: 84px;
     font-family: 'Great Vibes', cursive;
+}
+@media only screen and (max-width:786px) {
+    #header h1 {
+        font-size: 74px;
+    }
 }
 
 .home-row .col-md-12 {
@@ -149,14 +159,6 @@ hr {
     min-width: 75%;
     min-height: 75%;
 }
-
-/* MOBILE */
-@media only screen and (max-width:768px) {
-    .img-row a {
-        pointer-events: none;
-    }
-}
-/*-------*/
 
 .modal-close button {
     margin-right: 15px;

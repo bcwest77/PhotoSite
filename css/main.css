@@ -60,7 +60,10 @@ img {
 }
 
 /* MOBILE */
-@media screen and (max-width:200px) {
+@media screen and (max-width:100px) {
+    .modal-content {
+        display: none;
+    }
     .modal:before {
         height: 130%;
     }

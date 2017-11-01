@@ -56,6 +56,9 @@ nav li a:focus {
     background-color: #FAFAF5 !important;
 }
 
+.nav .theme-switch {
+    display: none;
+}
 .theme-switch {
     position: absolute;
     background-color: rgba(140, 140, 140, 0.15);

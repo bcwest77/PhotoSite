@@ -22,4 +22,4 @@ function invertTheme() {
     document.cookie = "theme=inverted";
     
     document.body.className = "inverted";
-}
+} 

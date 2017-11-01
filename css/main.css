@@ -53,7 +53,8 @@ nav li a:focus {
     color: #333 !important;
 }
 .active > a {
-    background-color: #FAFAF5 !important;
+    background-color: #333 !important;
+    color: #FAFAF5 !important;
 }
 
 .theme-switch {
@@ -90,11 +91,19 @@ nav li a:focus {
     background-color: #222 !important;
     color: #FAFAF5 !important;
 }
-.inverted .active > a {
+.inverted .active {
+    background-color: #FAFAF5;
     color: #333 !important;
 }
 .inverted nav li a {
     color: #FAFAF5 !important;
+}
+.inverted .theme-switch a {
+    right: 0px;
+    left: auto;
+}
+.inverted .modal-content {
+    background-color: #222;
 }
 
 img {
@@ -188,7 +197,7 @@ hr {
 }
 
 .modal-content {
-    background-color: #222;
+    background-color: #FAFAF5;
 }
 
 body.modal-open {

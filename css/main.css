@@ -11,7 +11,7 @@ body {
     background-color: #FAFAF5;
 }
 body.photo-page {
-    background-color: #030303;
+    background-color: #030303 !important;
 }
 
 @media only screen and (min-width:786px) {
@@ -42,7 +42,7 @@ nav li {
     margin-bottom: -5px;
     font-size: 22px;
 }
-nav li a {
+.nav-btn {
     outline: none !important;
     color: #666 !important;
 }
@@ -67,16 +67,34 @@ nav li a:focus {
     right: 17px;
 }
 .theme-switch a {
-    background-color: #333;
+    cursor: pointer;
+    left: 0px;
+    position: absolute;
+    background-color: rgb(177, 177, 177);
     border: 1px solid black;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border-radius: 100%;
 }
 @media only screen and (max-width:786px) {
     .nav .theme-switch {
         display: none;
     }
+}
+
+.inverted {
+    background-color: #222 !important;
+    color: #FAFAF5 !important;
+}
+.inverted nav {
+    background-color: #222 !important;
+    color: #FAFAF5 !important;
+}
+.inverted .active > a {
+    color: #333 !important;
+}
+.inverted nav li a {
+    color: #FAFAF5 !important;
 }
 
 img {

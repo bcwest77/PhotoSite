@@ -3,6 +3,26 @@ layout: default
 title: Photography
 bodyClass: photo-page
 ---
+<script>
+    document.body.className += "photo-page";
+    document.body.style = "padding-left: 17px !important;"
+
+    theme = null;
+    cookies = document.cookie.split(";");
+    for (var i = 0; i < cookies.length; i++) {
+        key = cookies[i].split("=")[0];
+        value = cookies[i].split("=")[1];
+    
+        if (key === "theme") {
+            theme = value;
+        }
+    }
+    oldBodyClass = document.body.className;
+    if (theme === "inverted") {
+        document.body.className += " inverted";
+    }
+</script>
+
 <div id="imgPopup" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -19,9 +39,12 @@ bodyClass: photo-page
 <nav class="navbar navbar-default navbar-fixed-top scroll-fix">
     <div class="container-fluid">
         <ul class="nav navbar-nav">
-            <li class=""><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
-            <li class="active"><a href="photos.html" class="hvr-underline-from-center">PHOTOS</a></li>
-            <li class=""><a href="contact.html" class="hvr-underline-from-center">CONTACT</a></li>
+            <div class="theme-switch">
+                <a onclick="changeTheme()"></a>
+            </div>
+            <li class=""><a href="index.html" class="hvr-underline-from-center nav-btn">HOME</a></li>
+            <li class="active"><a href="photos.html" class="hvr-underline-from-center nav-btn">PHOTOS</a></li>
+            <li class=""><a href="contact.html" class="hvr-underline-from-center nav-btn">CONTACT</a></li>
         </ul>
     </div>
 </nav>

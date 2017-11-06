@@ -67,6 +67,18 @@ a {
     color: #FAFAF5;
 }
 
+#theme-switch-mobile {
+    top: auto;
+    left: auto;
+    right: 5px;
+    bottom: -15px;
+    width: 30px;
+    height: 15px;
+}
+#theme-switch-mobile a {
+    width: 13px;
+    height: 13px;
+}
 .theme-switch {
     position: absolute;
     background-color: rgba(140, 140, 140, 0.15);
@@ -92,7 +104,10 @@ a {
         display: none;
     }
 }
-
+#bootstrap-override.inverted .theme-switch a {
+    right: 0px;
+    left: auto;
+}
 #bootstrap-override.inverted {
     background-color: #222;
     color: #FAFAF5;
@@ -111,10 +126,6 @@ a {
 }
 #bootstrap-override.inverted nav li a {
     color: #FAFAF5;
-}
-#bootstrap-override.inverted .theme-switch a {
-    right: 0px;
-    left: auto;
 }
 #bootstrap-override.inverted .modal-content {
     background-color: #222;
@@ -221,19 +232,24 @@ body.modal-open {
 }
 
 @media only screen and (max-width:786px) {
-    #contact-list {
+    #bootstrap-override #contact-list {
         margin-top: 40px;
         font-size: 23px;
     }
 }
 @media only screen and (min-width:786px) {
-    #contact-list {
+    #bootstrap-override #contact-list {
         font-size: 40px;
         position: absolute;
         top: 38%;
     }
+    #bootstrap-override #footer {
+        font-size: 12px;
+        position: absolute;
+        bottom: 0%;
+    }
 }
-#contact-list span {
+#bootstrap-override #contact-list span {
     font-weight: bold;
 }
 

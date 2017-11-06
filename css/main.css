@@ -68,23 +68,39 @@ a {
 }
 
 @media only screen and (min-width:786px) {
-    #theme-switch-mobile {
-        display: none;
+}
+@media only screen and (max-width:786px) {
+    #bootstrap-override #footer p {
+        text-align: left;
+    }
+    #bootstrap-override #footer {
+        position: absolute;
+        left: -7px;
+        bottom: 0px;
+    }
+    #bootstrap-override #mobile-footer {
+        position: absolute;
+        right: 8px;
+        bottom: 0px;
+        margin-bottom: 8px;
     }
 }
-#theme-switch-mobile {
+#footer {
+    font-size: 12px;
+}
+#bootstrap-override #mobile-footer .theme-switch {
     top: auto;
     left: auto;
-    right: 5px;
-    bottom: -15px;
+    right: 0px;
+    bottom: 3px;
     width: 30px;
     height: 15px;
 }
-#theme-switch-mobile a {
+#bootstrap-override #mobile-footer .theme-switch a {
     width: 13px;
     height: 13px;
 }
-.theme-switch {
+#bootstrap-override .theme-switch {
     position: absolute;
     background-color: rgba(140, 140, 140, 0.15);
     border: 1px solid #666;
@@ -94,7 +110,7 @@ a {
     top: 14px;
     right: 17px;
 }
-.theme-switch a {
+#bootstrap-override .theme-switch a {
     cursor: pointer;
     left: 0px;
     position: absolute;
@@ -105,7 +121,7 @@ a {
     border-radius: 100%;
 }
 @media only screen and (max-width:786px) {
-    .nav .theme-switch {
+    #bootstrap-override .nav .theme-switch {
         display: none;
     }
 }

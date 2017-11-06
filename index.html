@@ -1,21 +1,27 @@
 ---
 layout: default
 title: Photography
+bodyID: bootstrap-override
 ---
 <script>
-    theme = null;
+    currentTheme = "default";
+    defaultThemeClass = document.body.className + " default";
+    invertedThemeClass = document.body.className + " inverted";
     cookies = document.cookie.split(";");
     for (var i = 0; i < cookies.length; i++) {
         key = cookies[i].split("=")[0];
         value = cookies[i].split("=")[1];
     
         if (key === "theme") {
-            theme = value;
+            currentTheme = value;
         }
     }
-    if (theme === "inverted") {
-        oldBodyClass = document.body.className;
-        document.body.className += " inverted";
+    if (currentTheme === "inverted") {
+        document.body.className = invertedThemeClass;
+    }
+    else {
+        currentTheme = "default";
+        document.body.className = defaultThemeClass;
     }
 </script>
 

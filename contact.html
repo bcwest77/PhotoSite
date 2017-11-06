@@ -1,21 +1,27 @@
 ---
 layout: default
 title: Photography
+bodyID: bootstrap-override
 ---
 <script>
-    theme = null;
+    currentTheme = "default";
+    defaultThemeClass = document.body.className + " default";
+    invertedThemeClass = document.body.className + " inverted";
     cookies = document.cookie.split(";");
     for (var i = 0; i < cookies.length; i++) {
         key = cookies[i].split("=")[0];
         value = cookies[i].split("=")[1];
     
         if (key === "theme") {
-            theme = value;
+            currentTheme = value;
         }
     }
-    if (theme === "inverted") {
-        oldBodyClass = document.body.className;
-        document.body.className += " inverted";
+    if (currentTheme === "inverted") {
+        document.body.className = invertedThemeClass;
+    }
+    else {
+        currentTheme = "default";
+        document.body.className = defaultThemeClass;
     }
 </script>
 
@@ -42,6 +48,12 @@ title: Photography
             <p><span>Email: </span>fake@email.com</p>
             <p><span>Phone: </span>(555)555-5555</p>
 
+        </div>
+
+        <div class="col-md-12" style="font-size:12px;position:absolute;bottom:5px;">
+
+            <p>&copy Brock West 2017</p>
+            
         </div>
         
     </div>

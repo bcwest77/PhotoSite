@@ -24,37 +24,47 @@ a {
     cursor: pointer;
 }
 
-.row {
-    margin-top: 51px !important;  
+#bootstrap-override .row {
+    margin-top: 51px;  
 }
 
-.navbar .navbar-nav {
+#bootstrap-override .navbar .navbar-nav {
     display: inline-block;
     float: none;
 }
-.navbar {
+#bootstrap-override .navbar {
     text-align: center;
 }
-nav {
-    background-color: #FAFAF5 !important;
+#bootstrap-override.default nav {
+    background-color: #FAFAF5;
 }
-nav li {
+#bootstrap-override nav li {
     margin-bottom: -5px;
     font-size: 22px;
 }
-.nav-btn {
-    outline: none !important;
-    color: #666 !important;
+#bootstrap-override.default .nav-btn {
+    outline: none;
+    color: #666;
 }
-nav li a:hover {
-    color: #333 !important;
+#bootstrap-override.default nav li a:hover {
+    color: #333;
 }
-nav li a:focus {
-    color: #333 !important;
+#bootstrap-override.default nav li a:focus {
+    color: #333;
 }
-.active > a {
-    background-color: #333 !important;
-    color: #FAFAF5 !important;
+#bootstrap-override.default .active > a {
+    background-color: #333;
+    color: #FAFAF5;
+}
+#bootstrap-override.default .active > a:hover {
+    color: #FAFAF5;
+}
+#bootstrap-override.default .active > a:focus {
+    color: #FAFAF5;
+}
+#bootstrap-override.default .modal-btn {
+    background-color: #333;
+    color: #FAFAF5;
 }
 
 .theme-switch {
@@ -83,26 +93,30 @@ nav li a:focus {
     }
 }
 
-.inverted {
-    background-color: #222 !important;
-    color: #FAFAF5 !important;
+#bootstrap-override.inverted {
+    background-color: #222;
+    color: #FAFAF5;
 }
-.inverted nav {
-    background-color: #222 !important;
-    color: #FAFAF5 !important;
-}
-.inverted .active {
+#bootstrap-override.inverted .modal-btn {
     background-color: #FAFAF5;
-    color: #333 !important;
+    color: #333;
 }
-.inverted nav li a {
-    color: #FAFAF5 !important;
+#bootstrap-override.inverted nav {
+    background-color: #222;
+    color: #FAFAF5;
 }
-.inverted .theme-switch a {
+#bootstrap-override.inverted .active > a {
+    background-color: #FAFAF5 !important;
+    color: #333;
+}
+#bootstrap-override.inverted nav li a {
+    color: #FAFAF5;
+}
+#bootstrap-override.inverted .theme-switch a {
     right: 0px;
     left: auto;
 }
-.inverted .modal-content {
+#bootstrap-override.inverted .modal-content {
     background-color: #222;
 }
 
@@ -265,6 +279,15 @@ body.modal-open {
     .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
         left: 0;
         right: 0;
+    }
+    #bootstrap-override.default .active > .hvr-underline-from-center:before {
+        background: #FAFAF5;
+    }
+    #bootstrap-override.inverted .hvr-underline-from-center:before {
+        background: #FAFAF5;
+    }
+    #bootstrap-override.inverted .active > .hvr-underline-from-center:before {
+        background: #4D4D4D;
     }
 }
 

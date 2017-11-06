@@ -2,24 +2,27 @@
 layout: default
 title: Photography
 bodyClass: photo-page
+bodyID: bootstrap-override
 ---
 <script>
-    document.body.className += "photo-page";
-    document.body.style = "padding-left: 17px !important;"
-
-    theme = null;
+    currentTheme = "default";
+    defaultThemeClass = document.body.className + " default";
+    invertedThemeClass = document.body.className + " inverted";
     cookies = document.cookie.split(";");
     for (var i = 0; i < cookies.length; i++) {
         key = cookies[i].split("=")[0];
         value = cookies[i].split("=")[1];
     
         if (key === "theme") {
-            theme = value;
+            currentTheme = value;
         }
     }
-    oldBodyClass = document.body.className;
-    if (theme === "inverted") {
-        document.body.className += " inverted";
+    if (currentTheme === "inverted") {
+        document.body.className = invertedThemeClass;
+    }
+    else {
+        currentTheme = "default";
+        document.body.className = defaultThemeClass;
     }
 </script>
 
@@ -27,7 +30,7 @@ bodyClass: photo-page
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-close text-right">
-                <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+                <button type="button" class="btn btn-default modal-btn" data-dismiss="modal">X</button>
             </div>
             <div class="modal-body text-center">
                 <img id="modal-img" src="img/pic01.jpg"/>
@@ -37,7 +40,7 @@ bodyClass: photo-page
 </div>
 
 <nav class="navbar navbar-default navbar-fixed-top scroll-fix">
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-bottom:-1px;">
         <ul class="nav navbar-nav">
             <div class="theme-switch">
                 <a onclick="changeTheme()"></a>

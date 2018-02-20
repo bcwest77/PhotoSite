@@ -1,5 +1,5 @@
 /*
-Dark grey - #4D4D4D
+Dark grey - #4D4D4D;
 Not white - #FAFAF5;
 */
 
@@ -24,39 +24,83 @@ a {
     cursor: pointer;
 }
 
-.row {
-    margin-top: 51px !important;  
+#bootstrap-override .row {
+    margin-top: 51px;  
 }
 
-.navbar .navbar-nav {
+#bootstrap-override .navbar .navbar-nav {
     display: inline-block;
     float: none;
 }
-.navbar {
+#bootstrap-override .navbar {
     text-align: center;
 }
-nav {
-    background-color: #FAFAF5 !important;
+#bootstrap-override.default nav {
+    background-color: #FAFAF5;
 }
-nav li {
+#bootstrap-override nav li {
     margin-bottom: -5px;
     font-size: 22px;
 }
-.nav-btn {
-    outline: none !important;
-    color: #666 !important;
+#bootstrap-override.default .nav-btn {
+    outline: none;
+    color: #666;
 }
-nav li a:hover {
-    color: #333 !important;
+#bootstrap-override.default nav li a:hover {
+    color: #333;
 }
-nav li a:focus {
-    color: #333 !important;
+#bootstrap-override.default nav li a:focus {
+    color: #333;
 }
-.active > a {
-    background-color: #FAFAF5 !important;
+#bootstrap-override.default .active > a {
+    background-color: #333;
+    color: #FAFAF5;
+}
+#bootstrap-override.default .active > a:hover {
+    color: #FAFAF5;
+}
+#bootstrap-override.default .active > a:focus {
+    color: #FAFAF5;
+}
+#bootstrap-override.default .modal-btn {
+    background-color: #333;
+    color: #FAFAF5;
 }
 
-.theme-switch {
+@media only screen and (min-width:786px) {
+}
+@media only screen and (max-width:786px) {
+    #bootstrap-override #footer p {
+        text-align: left;
+    }
+    #bootstrap-override #footer {
+        position: absolute;
+        left: -7px;
+        bottom: 0px;
+    }
+    #bootstrap-override #mobile-footer {
+        position: absolute;
+        right: 8px;
+        bottom: 0px;
+        margin-bottom: 8px;
+    }
+}
+#footer {
+    font-size: 12px;
+}
+#bootstrap-override #mobile-footer .theme-switch {
+    top: auto;
+    left: auto;
+    right: 0px;
+    bottom: 3px;
+    width: 30px;
+    height: 15px;
+}
+#bootstrap-override #mobile-footer .theme-switch a {
+    width: 13px;
+    height: 13px;
+}
+#bootstrap-override .theme-switch {
     position: absolute;
     background-color: rgba(140, 140, 140, 0.15);
     border: 1px solid #666;
@@ -66,7 +110,7 @@ nav li a:focus {
     top: 14px;
     right: 17px;
 }
-.theme-switch a {
+#bootstrap-override .theme-switch a {
     cursor: pointer;
     left: 0px;
     position: absolute;
@@ -77,24 +121,35 @@ nav li a:focus {
     border-radius: 100%;
 }
 @media only screen and (max-width:786px) {
-    .nav .theme-switch {
+    #bootstrap-override .nav .theme-switch {
         display: none;
     }
 }
-
-.inverted {
-    background-color: #222 !important;
-    color: #FAFAF5 !important;
+#bootstrap-override.inverted .theme-switch a {
+    right: 0px;
+    left: auto;
 }
-.inverted nav {
-    background-color: #222 !important;
-    color: #FAFAF5 !important;
+#bootstrap-override.inverted {
+    background-color: #222;
+    color: #FAFAF5;
 }
-.inverted .active > a {
-    color: #333 !important;
+#bootstrap-override.inverted .modal-btn {
+    background-color: #FAFAF5;
+    color: #333;
 }
-.inverted nav li a {
-    color: #FAFAF5 !important;
+#bootstrap-override.inverted nav {
+    background-color: #222;
+    color: #FAFAF5;
+}
+#bootstrap-override.inverted .active > a {
+    background-color: #FAFAF5 !important;
+    color: #333;
+}
+#bootstrap-override.inverted nav li a {
+    color: #FAFAF5;
+}
+#bootstrap-override.inverted .modal-content {
+    background-color: #222;
 }
 
 img {
@@ -188,7 +243,7 @@ hr {
 }
 
 .modal-content {
-    background-color: #222;
+    background-color: #FAFAF5;
 }
 
 body.modal-open {
@@ -198,19 +253,24 @@ body.modal-open {
 }
 
 @media only screen and (max-width:786px) {
-    #contact-list {
+    #bootstrap-override #contact-list {
         margin-top: 40px;
         font-size: 23px;
     }
 }
 @media only screen and (min-width:786px) {
-    #contact-list {
+    #bootstrap-override #contact-list {
         font-size: 40px;
         position: absolute;
         top: 38%;
     }
+    #bootstrap-override #footer {
+        font-size: 12px;
+        position: absolute;
+        bottom: 0%;
+    }
 }
-#contact-list span {
+#bootstrap-override #contact-list span {
     font-weight: bold;
 }
 
@@ -256,6 +316,15 @@ body.modal-open {
     .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
         left: 0;
         right: 0;
+    }
+    #bootstrap-override.default .active > .hvr-underline-from-center:before {
+        background: #FAFAF5;
+    }
+    #bootstrap-override.inverted .hvr-underline-from-center:before {
+        background: #FAFAF5;
+    }
+    #bootstrap-override.inverted .active > .hvr-underline-from-center:before {
+        background: #4D4D4D;
     }
 }
 

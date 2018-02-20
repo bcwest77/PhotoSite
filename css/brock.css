@@ -50,7 +50,7 @@ body.theme-inverted #myNav ul li.active {
 #navPlaceholder {
     width: 100%;
 }
-#navSwitch {
+.navSwitch {
     position: absolute;
     background-color: rgba(140, 140, 140, 0.15);
     border: 1px solid #666;
@@ -60,7 +60,7 @@ body.theme-inverted #myNav ul li.active {
     top: 14px;
     right: 17px;
 }
-#navSwitch a {
+.navSwitch a {
     cursor: pointer;
     left: 0px;
     right: unset;
@@ -75,12 +75,22 @@ body.theme-inverted #myNav ul li.active {
     background: #222;
     padding: .50rem .75rem;
 }
+#mobileSwitch {
+    display: none;
+}
+#mobileSwitch {
+    bottom: 0px;
+    top: unset;
+}
 @media (max-width:991px){
-    #navSwitch {
+    .navSwitch {
         display: none;
     }
+    #mobileSwitch {
+        display: block;
+    }
 }
-body.theme-inverted #navSwitch a {
+body.theme-inverted .navSwitch a {
     right: 0px;
     left: unset;
 }
@@ -208,7 +218,7 @@ body.theme-inverted hr {
     z-index: -1;
     left: 50%;
     right: 50%;
-    bottom: 22%;
+    bottom: 0;
     background: #222;
     height: 1px;
     -webkit-transition-property: left, right;
@@ -222,8 +232,8 @@ body.theme-inverted hr {
       background: #FAFAF5;
   }
   .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-    left: 15%;
-    right: 15%;
+    left: 0;
+    right: 0;
   }
   body.theme-inverted .hvr-underline-from-center:before {
       background: #FAFAF5;

@@ -42,7 +42,7 @@
         <![endif]-->
         
         <nav id="myNav" class="fixed-top">
-            <div id="navSwitch">
+            <div class="navSwitch">
                 <a onclick="changeTheme()"></a>
             </div>
             <ul class="nav justify-content-center">
@@ -61,24 +61,6 @@
         
         <div class="container-fluid d-flex h-100 text-center" id="contactContainer">
             <div class="row align-self-center" style="width:110%;">
-        </div>
-
-        <div class="col-md-12" id="footer">
-            <p>Copyright © 2017 Brock West</p>
-        </div>
-
-        <div class="col-md-12" id="footer">
-            <p>Copyright © 2017 Brock West</p>
-        </div>
-
-        <div class="col-md-12" id="footer">
-            <p>Copyright © 2017 Brock West</p>
-        </div>
-        <div class="col-md-12" id="mobile-footer">
-            <div class="theme-switch">
-                <a onclick="changeTheme()"></a>
-            </div>
-        </div>
         
                 <div class="col-md-12 mx-auto">
                 
@@ -86,11 +68,19 @@
                     <p><span>Phone: </span>(555)555-5555</p>
         
                 </div>
+
+                <div class="col-md-12" id="mobile-switch">
+                </div>
         
             </div>
         </div>
+        <div class="fixed-bottom" id="copyright">
+            Copyright &copy; 2018 Brock West
 
-        <div class="fixed-bottom" id="copyright">Copyright &copy; 2018 Brock West</div>
+            <div id="mobileSwitch" class="navSwitch">
+                <a onclick="changeTheme()"></a>
+            </div>
+        </div>
 
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
